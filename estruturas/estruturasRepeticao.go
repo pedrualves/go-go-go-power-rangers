@@ -19,7 +19,7 @@ func ExemplosDeEstruturasDeRepeticao() {
 // exemplo do classico for
 func forTradicional(num int) {
 	for i := 0; i < num; i++ {
-		fmt.Println(i, " carneirinho(s)")
+		fmt.Println(i, " cordeirinho(s)")
 	}
 }
 

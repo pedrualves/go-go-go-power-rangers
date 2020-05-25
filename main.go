@@ -1,11 +1,12 @@
 package main
 
 import (
+	"go-go-go-power-rangers/conversor"
 	"go-go-go-power-rangers/estruturas"
 	"go-go-go-power-rangers/funcoes"
+	impl "go-go-go-power-rangers/objetos/implementacoes"
+	inter "go-go-go-power-rangers/objetos/interface"
 	"go-go-go-power-rangers/operadores"
-	impl "go-go-go-power-rangers/orientado_objetos/implementacoes"
-	inter "go-go-go-power-rangers/orientado_objetos/interface"
 	"go-go-go-power-rangers/variaveis"
 	"log"
 )
@@ -39,4 +40,13 @@ func main() {
 
 	andarDeTrem(client)
 	andarDeTrem(employee)
+
+	user := conversor.User{
+		Name:   "Abelardo",
+		Online: true,
+	}
+
+	conversor.ConverterUserToJSON(user)
+
+	conversor.ConverterUserFromJSON(`{"username":"abelardo","active":true}`)
 }

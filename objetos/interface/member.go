@@ -1,4 +1,4 @@
-package orientado_objetos
+package objetos
 
 type Member interface {
 	ComprarNoShopTrem() bool

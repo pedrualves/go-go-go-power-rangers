@@ -9,6 +9,6 @@ type Employee struct {
 }
 
 func (c Employee) ComprarNoShopTrem() bool {
-	log.Println(c.Alias + " vai chamar com 3 reais e vai levar 6 barras de suflair")
+	log.Printf("e na promocao %s vai chamar com 5 reais e vai levar 2 barras de suflair\n", c.Alias)
 	return true
 }

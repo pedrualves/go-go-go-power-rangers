@@ -9,6 +9,6 @@ type Client struct {
 }
 
 func (c Client) ComprarNoShopTrem() bool {
-	log.Println(c.Name + " vai chamar com 3 reais e vai levar 6 barras de suflair")
+	log.Printf("o patrão %s vai chamar com 10 reais e vai levar 4 barras de suflair\n", c.Name)
 	return false
 }

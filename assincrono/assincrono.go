@@ -6,9 +6,9 @@ import (
 )
 
 func Display(str string) {
-	defer fmt.Printf("chega de %s", str)
-	for w := 0; w < 6; w++ {
+	defer fmt.Printf("chega de %s\n", str)
+	for i := 0; i < 6; i++ {
 		time.Sleep(1 * time.Second)
-		fmt.Println(str)
+		fmt.Println(str, i)
 	}
 }
